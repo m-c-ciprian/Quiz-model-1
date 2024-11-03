@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>HTML and CSS Quiz - Questions and answers in Romanian.</h1>
+        <div id="question-container">
+            <h2>What does the HTML 'href' attribute do in a link?</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" value="0" id="answer${index}" checked>
+                    <label for="answer${index}">A. Specifies the URL to which the link leads</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" value="1" id="answer${index}">
+                    <label for="answer${index}">B. Sets a different visual appearance for the link</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" value="2" id="answer${index}">
+                    <label for="answer${index}">C. Disable the link</label>
+                </li>
+            </ul>
+        </div>
+        
+        <button id="submit-btn">Check the Answer</button>
+        <button id="new-question-btn" class="info">Another question!</button>
+        <div id="result-container">
+            <p class='right'>Correct answer!</p>
+        </div>
+        <div id="explanation-container" class="explanation">
+            The 'href' attribute in an HTML link specifies the URL to which the user is directed when the link is clicked.
+        </div>
+    </div>
+    
+    <script src="quiz.js"></script>
+</body>
+</html>
